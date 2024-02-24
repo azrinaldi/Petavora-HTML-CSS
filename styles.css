@@ -1,103 +1,97 @@
 body {
   margin: 0;
+  padding: 0;
+  background-image: url("https://i.ibb.co/Zz031mx/Body-Background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 98vh;
   font-family: Arial, sans-serif;
 }
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
-  margin-bottom: 52px;
-}
-
 #header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000; /* pastikan z-index cukup tinggi untuk menempatkan header di depan konten */
-  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1px;
+    z-index: 1000; /* Pastikan header muncul di atas konten lainnya */
 }
 
 .logo {
   display: flex;
   align-items: center;
+  margin: 5px 20px;
 }
-
-.logo-content {
-  display: flex;
+.logo-image img {
+  max-width: 40px;
+}
+.logo-title {
   align-items: flex-start;
-  margin-left: 10px;
+  margin-left: 5px;
 }
-
-#header-img {
-  max-height: 50px;
-}
-
-.text-content{
-  margin-left: 10px;
-}
-
-.text-content h1,
+.logo-title h2,
 p {
   margin: 0;
+  color: #ffffff;
 }
-
-.text-content h1
-{
+.logo-title h2 {
   font-family: monospace;
   font-size: 30px;
 }
-.text-content p
-{
-  font-family: 'Courier New', Courier, monospace;
+.logo-title p {
+  font-family: "Courier New", Courier, monospace;
 }
 
-.logo img {
-  height: 50px;
-}
-
-#nav-bar ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0 30px;
   display: flex;
 }
-
-#nav-bar ul li {
+.navbar ul li {
   margin-right: 20px;
 }
-
-#nav-bar ul li:last-child {
+.navbar ul li:last-child {
   margin-right: 0;
 }
-
 .nav-link {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-#order-link{
-  background-color: aqua;
-  padding: 10px 15px;
-  border-radius: 20px;
-  color: #333;
-  font-weight: 700;
-}
 .nav-link:hover {
-  color: #ffd700;
+  color: #D7D02A;
 }
-main img{
-  height: 100vh;
+#order-link{
+    background-color: #D7D02A;
+    color: black;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
-#main{
-  padding: 5px 20px;
+#order-link:hover{
+    background-color: #0000006f;
+    color: #fff;
+    transition: color 0.1s ease;
 }
-#footer{
-  background-color: #333;
-  text-align: right;
-  color: #fff;
-  padding: 20px;
+
+#main {
+    padding-top: 65px;
+    margin: 0 60px;
+}
+
+.main-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 150vh;
+}
+
+
+
+footer{
+    text-align: center;
+    padding: 10px;
 }

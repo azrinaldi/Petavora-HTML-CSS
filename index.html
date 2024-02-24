@@ -1,93 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petavora</title>
-    <link rel="icon" href="https://i.ibb.co/0QMjDhJ/Logo-Petavora.png" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <script>
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        header.classList.toggle(
-          "sticky",
-          window.scrollY > 0
-        ); /* menambahkan kelas 'sticky' saat melakukan scroll */
-      });
-    </script>
-    <header>
-      <header id="header">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i.ibb.co/z748XnN/Logo-Petavora.png">
+</head>
+<body>
+    <header id="header">
         <div class="logo">
-          <div class="logo-content">
-            <img
-              id="header-img"
-              src="https://i.ibb.co/0QMjDhJ/Logo-Petavora.png"
-              alt="Petavora Logo"
-            />
-            <div class="text-content">
-              <h1>PETAVORA</h1>
-              <p>Building Tomorrow's Maps Today</p>
+            <div class="logo-image">
+                <img src="https://i.ibb.co/z748XnN/Logo-Petavora.png">
             </div>
-          </div>
+            <div class="logo-title">
+                <h2>PETAVORA</h2>
+                <p>Building Tomorrow's Maps Today</p>
+            </div>
         </div>
-        <nav id="nav-bar">
-          <ul>
-            <li><a class="nav-link" href="#AboutUs">About US</a></li>
-            <li><a class="nav-link" href="#OurService">Our Service</a></li>
-            <li><a class="nav-link" href="#HowToOrder">How To Order</a></li>
-            <li><a class="nav-link" href="#Testimony">Testimony</a></li>
-            <li><a id="order-link"class="nav-link" href="https://wa.me/62895356942244">Order</a></li>
-          </ul>
-        </nav>
-      </header>
+        <div class="navbar">
+            <ul>
+                <li><a class="nav-link" href="#AboutUs">About US</a></li>
+                <li><a class="nav-link" href="#OurService">Our Service</a></li>
+                <li><a class="nav-link" href="#HowToOrder">How To Order</a></li>
+                <li><a class="nav-link" href="#Testimony">Testimony</a></li>
+                <li><a id="order-link"class="nav-link" href="https://wa.me/62895356942244">Orde</a></li>
+              </ul>
+        </div>
     </header>
     <main id="main">
-        <div id="AboutUs">
-            <h2>About Us</h2>
-            <p>Welcome to our company! We are a team of passionate individuals dedicated to delivering the best products and services to our customers. Our journey began with a vision to make a positive impact in the world, and we continue to strive towards that goal every day. With years of experience and expertise in our field, we are committed to excellence in everything we do.</p>
-            <p>At our core, we value integrity, innovation, and customer satisfaction. Whether you're a small business owner or a large corporation, we are here to cater to your needs and exceed your expectations. Our team works tirelessly to ensure that every interaction with us is seamless and enjoyable.</p>
-            <p>Thank you for choosing us as your partner. Together, let's create a brighter future.</p>
+        <div class="main-content">
+            <div id="Home"></div>
+            <div id="AboutUs"></div>
+            <div id="OurService"></div>
+            <div id="HowToOrder"></div>
+            <div id="Testimony"></div>
         </div>
-        
-        <div id="OurService">
-            <h2>Our Service</h2>
-            <p>OurService is your one-stop destination for all your needs. From consulting to implementation, we offer a comprehensive range of services to help you achieve your goals. Our team of experts is dedicated to providing tailored solutions that align with your unique requirements.</p>
-            <p>Whether you need assistance with project management, digital marketing, or IT solutions, we've got you covered. OurService prides itself on delivering top-notch services that drive results and exceed expectations. With us by your side, you can focus on what you do best while we take care of the rest.</p>
-            <p>Experience the difference with OurService. Contact us today to learn more about how we can help you succeed.</p>
-        </div>
-        
-        <div id="HowToOrder">
-            <h2>How To Order</h2>
-            <p>Ordering from us is quick and easy! Follow these simple steps to get started:</p>
-            <ol>
-                <li>Browse our catalog and select the products or services you need.</li>
-                <li>Add the items to your cart and proceed to checkout.</li>
-                <li>Enter your shipping and billing information.</li>
-                <li>Review your order and make any necessary adjustments.</li>
-                <li>Complete your purchase and wait for your order to arrive.</li>
-            </ol>
-            <p>It's that simple! If you have any questions or need assistance, our customer support team is always here to help. Order from us today and experience the convenience of shopping with ease.</p>
-        </div>
-        
-        <div id="Testimony">
-            <h2>Testimonials</h2>
-            <p>Don't just take our word for it! Here's what our satisfied customers have to say:</p>
-            <blockquote>
-                <p>"Working with the team at OurCompany has been a game-changer for our business. Their attention to detail and commitment to excellence are unmatched. Highly recommended!"</p>
-                <footer>- John Doe, CEO</footer>
-            </blockquote>
-            <blockquote>
-                <p>"I've been a loyal customer of OurService for years, and they never disappoint. Their professionalism and dedication to customer satisfaction are truly commendable. Thank you for always going above and beyond!"</p>
-                <footer>- Jane Smith, Small Business Owner</footer>
-            </blockquote>
-            <!-- Add more testimonials as needed -->
-        </div>
-        
     </main>
-    <footer id="footer">
-        <span>Copyright 2024, Azrnld</span>
+    <footer>
+        <div>
+            <span>Copyright 2024</span>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
