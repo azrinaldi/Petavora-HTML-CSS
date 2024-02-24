@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-bottom: 52px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* pastikan z-index cukup tinggi untuk menempatkan header di depan konten */
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-content {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+#header-img {
+  max-height: 50px;
+}
+
+.text-content{
+  margin-left: 10px;
+}
+
+.text-content h1,
+p {
+  margin: 0;
+}
+
+.text-content h1
+{
+  font-family: monospace;
+  font-size: 30px;
+}
+.text-content p
+{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.logo img {
+  height: 50px;
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+}
+
+#nav-bar ul li {
+  margin-right: 20px;
+}
+
+#nav-bar ul li:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+#order-link{
+  background-color: aqua;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: #333;
+  font-weight: 700;
+}
+.nav-link:hover {
+  color: #ffd700;
+}
+main img{
+  height: 100vh;
+}
+#main{
+  padding: 5px 20px;
+}
+#footer{
+  background-color: #333;
+  text-align: right;
+  color: #fff;
+  padding: 20px;
+}
