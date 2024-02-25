@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 body {
   margin: 0;
   padding: 0;
@@ -9,19 +9,19 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 98vh;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins";
 }
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1px;
-    z-index: 1000; /* Pastikan header muncul di atas konten lainnya */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1px;
+  z-index: 1000; /* Pastikan header muncul di atas konten lainnya */
 }
 
 .logo {
@@ -35,6 +35,7 @@ body {
 .logo-title {
   align-items: flex-start;
   margin-left: 5px;
+  text-decoration: none;
 }
 .logo-title h2,
 p {
@@ -42,9 +43,11 @@ p {
   color: #ffffff;
 }
 .logo-title h2 {
-  font-family: monospace;
+  color: #d7d02a;
   font-size: 30px;
+  margin-bottom: -10px;
 }
+
 .logo-title p {
   font-family: "Courier New", Courier, monospace;
 }
@@ -67,85 +70,91 @@ p {
   transition: color 0.3s ease;
 }
 .nav-link:hover {
-  color: #D7D02A;
+  color: #d7d02a;
 }
-#order-link{
-    background-color: #D7D02A;
-    color: black;
-    font-weight: 700;
-    padding: 10px 20px;
-    border-radius: 20px;
+#order-link {
+  background-color: #d7d02a;
+  color: black;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
-#order-link:hover{
-    background-color: #0000006f;
-    color: #fff;
-    transition: color 0.1s ease;
+#order-link:hover {
+  background-color: #0000006f;
+  color: #fff;
+  transition: color 0.1s ease;
 }
 
 #main {
-    padding-top: 65px;
-    margin: 0 60px;
+  padding-top: 65px;
+  margin: 0 60px;
 }
 
 .main-content {
-    /* background-color: rgba(0, 0, 0, 0.7); */
-    height: 150vh;
+  height: 150vh;
 }
-#Home{
-    margin: 100px 70px 200px 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#Home {
+  margin: 100px 0px 150px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.home-content{ 
-    z-index: 1;
+.home-content {
+  z-index: 1;
+  max-width: 600px;
 }
-.home-img{
-    /* background-color: rgba(0, 180, 0, 0.7); */
-    position: absolute;
-    right: 0;
+.home-img {
+  position: absolute;
+  right: 0;
 }
-.home-img img{
+.home-img img {
+  max-width: 850px;
 }
-#Home span{
-    margin: 0;
-    padding: 0;
-    color: #000;
-    text-shadow: 0px 4px 3px #000000ce;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 24px;
-}
-
-#Home h1{
-    margin: 0px;
-    padding: 0px;
-    color: #ffffff;
-    font-family: 'Montserrat';
-    text-shadow: 0px 6px 3px #000000ce;
-    font-size: 54px;
-}
-#Home .title{
-    color: #D7D02A;
-    font-size: 72px;
-    font-weight: bold;
-    font-style: normal;
-}
-.home-img img{
-    max-width: 800px;
+#Home span {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-shadow: 0px 4px 3px #000000ce;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
 }
 
-.content{
-    height: 20vh;
+#Home h1 {
+  margin: 0px;
+  padding: 0px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  text-shadow: 0px 6px 3px #000000ce;
+  font-size: 50px;
 }
-
-#AboutUs{
-    height: 40vh;
-    /* background-color: rgba(0, 0, 0, 0.7); */
-    color: #fff;
+#Home .title {
+  color: #d7d02a;
+  font-size: 72px;
+  font-weight: bold;
+  font-style: normal;
+}
+.home-content .description{
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 10px;
-    
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#Home p {
+    margin: 5px 0;
+    color: #fff;
+}
+.content {
+  height: 20vh;
 }
 
-footer{
-    text-align: center;
+#AboutUs {
+  height: 40vh;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  color: #fff;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
 }
